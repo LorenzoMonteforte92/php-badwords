@@ -10,6 +10,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="censored.php" method="GET">
+        <input type="text" name="userText" required>
+        <button type="submit" >Submit</button>
+    </form>
 </body>
 </html>
