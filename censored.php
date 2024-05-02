@@ -1,6 +1,7 @@
 <?php
+$userWord = $_GET['userWord'];
 $userText = $_GET['userText'];
-$censoredText = str_replace('ciao', '***', $userText )
+$censoredText = str_replace($userWord, '***', $userText);
 ?>
 
 <!DOCTYPE html>
@@ -13,13 +14,13 @@ $censoredText = str_replace('ciao', '***', $userText )
 <body>
   <p> 
     <h3>Testo Originale</h3>
-    <?php echo $userText?> <div> n. caratteri: <?php echo strlen($userText)?></div> </p>
+    <?php echo $userWord?> <div> n. caratteri: <?php echo strlen($userWord)?></div> </p>
   <p>
     <h3>
         Testo Censurato
     </h3>
     <?php echo $censoredText?>
-    <div> n. caratteri: <?php echo strlen($userText)?></div>
+    <div> n. caratteri: <?php echo strlen($censoredText)?></div>
 </p>
 </body>
 </html>

@@ -11,7 +11,14 @@
 </head>
 <body>
     <form action="censored.php" method="GET">
-        <input type="text" name="userText" required>
+        <div>
+            <label for="censored-word">parola da censurare</label>
+            <input type="text" name="userWord" id="censored-word" required>
+        </div>
+        <div>
+            <label for="">testo censurato</label>
+            <textarea name="userText" id="" cols="30" rows="10"></textarea>
+        </div>
         <button type="submit" >Submit</button>
     </form>
 </body>
